@@ -4,12 +4,12 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'mongoose',
       settings: {
-        host: env('DATABASE_HOST', 'guitarla.2mnoe.mongodb.net'),
+        host: env('DATABASE_HOST'),
         srv: env.bool('DATABASE_SRV', true),
         port: env.int('DATABASE_PORT', 27017),
-        database: env('DATABASE_NAME', 'guitarla'),
-        username: env('DATABASE_USERNAME', 'robertsmartcode'),
-        password: env('DATABASE_PASSWORD', 'Robert4488'),
+        database: env('DATABASE_NAME'),
+        username: env('DATABASE_USERNAME'),
+        password: env('DATABASE_PASSWORD'),
       },
       options: {
         authenticationDatabase: env('AUTHENTICATION_DATABASE', 'admin'),
